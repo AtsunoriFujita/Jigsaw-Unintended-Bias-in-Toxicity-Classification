@@ -797,7 +797,7 @@ class MyDataset(torch.utils.data.Dataset):
 
 
 # Training
-def trainer(X_train, y_train, #X_test,
+def trainer(X_train, y_train,
             embedding_matrix, train_ori):
 
     logger.info('Prepare folds')
@@ -809,11 +809,11 @@ def trainer(X_train, y_train, #X_test,
     train_preds = np.zeros((len(X_train)))
 
     for i, (train_idx, valid_idx) in enumerate(splits):
-        x_train_fold = torch.tensor(X_train[train_idx], dtype=torch.long) #.cuda()
-        y_train_fold = torch.tensor(y_train[train_idx], dtype=torch.float32)  #.cuda()
+        x_train_fold = torch.tensor(X_train[train_idx], dtype=torch.long)
+        y_train_fold = torch.tensor(y_train[train_idx], dtype=torch.float32)
 
-        x_val_fold = torch.tensor(X_train[valid_idx], dtype=torch.long)  #.cuda()
-        y_val_fold = torch.tensor(y_train[valid_idx], dtype=torch.float32)#.cuda()
+        x_val_fold = torch.tensor(X_train[valid_idx], dtype=torch.long)
+        y_val_fold = torch.tensor(y_train[valid_idx], dtype=torch.float32)
 
         train_df = train_ori.iloc[valid_idx, :]
 
@@ -892,7 +892,6 @@ def trainer(X_train, y_train, #X_test,
                     epoch + 1, NUM_EPOCHS, avg_loss, avg_val_loss, score,
                     elapsed_time))
 
-            #early_stopping(avg_val_loss, model)
             early_stopping(score, model)
 
             if early_stopping.early_stop:
