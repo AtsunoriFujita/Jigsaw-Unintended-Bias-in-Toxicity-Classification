@@ -1032,12 +1032,12 @@ def main():
                 word_seq.append(word_dict[token.text])
         word_sequences.append(word_seq)
 
-    del docs, train, text_list#, test
+    del docs, train, text_list
     gc.collect()
 
     with open('word_dict.pickle', 'wb') as f:
         pickle.dump(word_dict, f)
-    f = open('word_dict.txt', 'w')  # 書き込みモードで開く
+    f = open('word_dict.txt', 'w')
     for key, value in sorted(word_dict.items()):
         f.write(f'{key} {value}\n')
     f.close()
