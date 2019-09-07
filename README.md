@@ -1,4 +1,4 @@
-# jigsaw-Unintended-Bias-in-Toxicity-Classification
+# Jigsaw Unintended Bias in Toxicity Classification
 This respository contains my code for competition in kaggle.
 
 
