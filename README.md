@@ -13,7 +13,7 @@ Private LB: 0.94660(7th)
 ##### Note: This repository contains only my models and only train script.
 
 
-My models   
+My models(5 Model averaging)   
 Public LB: 0.94719   
 Private LB: 0.94651
 
