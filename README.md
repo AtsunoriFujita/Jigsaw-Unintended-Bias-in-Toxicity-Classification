@@ -42,7 +42,7 @@ I created 5 models
 
 
 - BERT
-  - The model is based on [yuval reina](https://www.kaggle.com/yuval6967)'s graet kernel(https://www.kaggle.com/yuval6967/toxic-bert-plain-vanila)
+  - The model is based on [yuval reina](https://www.kaggle.com/yuval6967)'s graet [kernel](https://www.kaggle.com/yuval6967/toxic-bert-plain-vanila)
   - Changes are loss function and preprocessing.
   - I created 4 BERT models.
     - BERT-Base Uncased
