@@ -1,4 +1,4 @@
-torch == 1.1.0
+torch == 2.2.0
 apex == 0.1
 pytorch_pretrained_bert == 0.6.2
 spacy == 2.1.3
